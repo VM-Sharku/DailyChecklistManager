@@ -5,6 +5,7 @@
 * **반복성 작업**을 저장할 **칸반 보드**만 존재하는 페이지 블록 _(주소 복사 필요)_
   * Cycle(선택), Weekday(다중 선택) 속성이 반드시 존재해야 함
 ![칸반 보드 생성하기](./images/page_board.jpg)
+![생성된 보드 예시](./images/sample_board.jpg)
 ![cycle - 일간,주간,월간](./images/cycle.jpg)
 ![weekday - 월,화,수,목,금,토,일](./images/weekday.jpg)
 

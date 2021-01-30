@@ -9,8 +9,6 @@ import argparse
 import time
 #import configparser
 
-weekday_in_korea = ['월','화','수','목','금','토','일']
-
 class DailyChecklistManager:
     _client=None
     _checklistPageUrl=''
@@ -23,8 +21,6 @@ class DailyChecklistManager:
         return ['진행 중', '미흡', '완벽']
     def weekday():
         return ['월', '화', '수', '목', '금', '토', '일']
-    def category():
-        return ['회사 업무', '게임', '부업']
     def client():
         return DailyChecklistManager._client
     def checklistPageUrl():

@@ -15,8 +15,10 @@
 
 사용 방법
 1. 선행 요구사항에서 만든 칸반 보드에 일일 체크리스트 항목을 추가
-  * 최상위 항목은 반드시 할 일 블록이어야 함
-  *![티켓 예시](./images/sample_ticket.jpg)
+    * Cycle을 일간으로 선택
+    * Weekday에서 해당 티켓이 수행되어야 할 요일을 모두 선택
+    * 최상위 항목은 반드시 할 일 블록이어야 함
+![티켓 예시](./images/sample_ticket.jpg)
 2. python3 DailyChecklistManager.py [-m update,U | add,A] [-t token_v2] [-uc 체크리스트 페이지의 url] [-ur 칸반 보드 페이지의 url]
-  * python3 -m A -t 토큰 -uc 체크리스트URL -ur 칸반보드URL : 일일 체크리스트 추가. 매일 자정에 스케줄러 등록을 권장합니다.
-  * python3 -m U -t 토큰 -uc 체크리스트URL -ur 칸반보드URL : 당일 체크리스트 상태 갱신. 매 시간 스케줄러 등록을 권장합니다.
+    * python3 -m A -t 토큰 -uc 체크리스트URL -ur 칸반보드URL : 일일 체크리스트 추가. 매일 자정에 스케줄러 등록을 권장합니다.
+    * python3 -m U -t 토큰 -uc 체크리스트URL -ur 칸반보드URL : 당일 체크리스트 상태 갱신. 매 시간 스케줄러 등록을 권장합니다.

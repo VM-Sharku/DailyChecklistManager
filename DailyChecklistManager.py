@@ -33,13 +33,6 @@ class DailyChecklistManager:
 def getDateFormat(date):
     return date.strftime(f'%y/%m/%d({weekday_in_korea[date.weekday()]})')
 
-def getNotionClient():
-    client = NotionClient(token_v2=token_v2)
-    if client is None:
-        print('Failed to connect to Notion.')
-        return None
-    return client
-
 async def addDailyChecklist(client):
     checklistPage = client.get_block(DailyChecklistManager.checklistPageUrl())
     if checklistPage is None:

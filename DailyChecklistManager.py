@@ -140,6 +140,10 @@ def getUncheckedItems(client, checklist):
     for ticket in checklist.children:
         if isinstance(ticket, TodoBlock):
             if not ticket.checked:
+                if len(ticket.children) == 0:
+                    result = True
+                    unchecked.append(ticket.title)
+                    continue
                 remainSubTodo = False
                 for subTodo in ticket.children:
                     if not subTodo.checked:
